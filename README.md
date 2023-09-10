@@ -19,6 +19,20 @@
 * PostgreSQL
 * TypeORM
 
+### Wireframe
+
+Homepage
+
+![Homepage](https://share.balsamiq.com/c/75DWCoYcesmempVo8HiZrt.png)
+
+Dashboard
+
+![Dashboard](https://share.balsamiq.com/c/jwJMvXX3WToqMKGUNA5bdW.png)
+
+Questionaire
+
+![Questionaire](https://share.balsamiq.com/c/eRwfGZmPqF6kYLhtYnesaw.png)
+
 ### Core Functionality 
 
 1. Monthly expense tracker
