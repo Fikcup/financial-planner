@@ -33,6 +33,14 @@ Questionaire
 
 ![Questionaire](https://share.balsamiq.com/c/eRwfGZmPqF6kYLhtYnesaw.png)
 
+Profile
+
+![Profile](https://share.balsamiq.com/c/uhhjyjMJ3ZncLaEd2xrqcU.png)
+
+Modals
+
+![Modals](https://share.balsamiq.com/c/eftrs5WMDDzwgwQPUm1FwL.png)
+
 ### Core Functionality 
 
 1. Monthly expense tracker
