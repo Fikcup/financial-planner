@@ -1,0 +1,31 @@
+org: fikcup
+app: gateway-service
+service: gateway-service
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-prune-plugin
+  - serverless-plugin-common-excludes
+  - serverless-offline
+
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  architecture: arm64
+  memorySize: 512
+  stage: ${opt:stage}
+  region: us-east-1
+  profile: serverless
+
+functions:
+  graphql:
+    handler: src/functions/graphql/handler.graphqlHandler
+    description: Apollo GraphQL Gateway
+    timeout: 30
+    events:
+      - http:
+          path: graphql
+          method: any

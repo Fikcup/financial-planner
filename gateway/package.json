@@ -1,0 +1,31 @@
+{
+  "name": "gateway-service",
+  "version": "1.0.0",
+  "description": "* Serves as the entry point to the microservices application.\r * Handles request routing, load balancing, and API gateway functions.\r * Enforces security, authentication, and rate limiting.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/gateway": "^2.5.4",
+    "apollo-server-lambda": "^3.12.1",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1456.0",
+    "graphql": "^16.8.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.120",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.6.0",
+    "dotenv": "^16.3.1",
+    "serverless": "^3.34.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-common-excludes": "^4.0.0",
+    "serverless-plugin-typescript": "^2.1.5",
+    "serverless-prune-plugin": "^2.0.2"
+  }
+}
