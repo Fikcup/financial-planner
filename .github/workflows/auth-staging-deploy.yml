@@ -1,0 +1,21 @@
+name: auth-staging-deploy
+'on': workflow_dispatch
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 18.14
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.14
+          registry-url: https://npm.pkg.github.com/
+      - name: Install package dependencies
+        run: npm ci
+        working-directory: ./auth
+      - name: Deploy to staging
+        uses: serverless/github-action@v3
+        working-directory: ./auth
+        with:
+          args: deploy --stage staging
